@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+    --color-base: #050505;
+    --color-textMain: #ffffff;
+    --color-muted: #888888;
+    --color-border: #222222;
+    --color-accent: #e5e5e5;
+
+    --font-mono: "Fira Code", monospace;
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+    --animate-blink: blink 1s step-end infinite;
+}
+
+html, body {
+    background-color: var(--color-base);
+
+    background-image: radial-gradient(var(--color-border) 1px, transparent 1px);
+    background-size: 24px 24px;
+    
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}

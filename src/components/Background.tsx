@@ -28,7 +28,7 @@ export default function RainBackground() {
         }
 
         const draw = () => {
-            ctx.fillStyle = "rgba(5, 5, 5, 0.1)"; 
+            ctx.fillStyle = "rgba(0, 0, 0, 0.1)"; 
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.font = `${fontSize}px "Fira Code", monospace`;
 

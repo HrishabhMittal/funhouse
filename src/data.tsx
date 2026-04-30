@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
     },
     {
         title: "Duchess",
-        description: "A custom chess engine written in Rust. Implements multiple search optimisations, along with a rudimentary NNUE (Efficiently Updatable Neural Network)m with weights trained on lichess' public games dataset and fine-tuned using Reinforcement Learning.",
+        description: "A custom chess engine written in Rust. Implements multiple search optimisations, along with a rudimentary NNUE (Efficiently Updatable Neural Network) with weights trained on lichess' public games dataset and fine-tuned using Reinforcement Learning.",
         links: [{ label: "Github", url: "https://github.com/HrishabhMittal/duchess" }]
     },
     {

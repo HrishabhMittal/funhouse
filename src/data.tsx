@@ -18,13 +18,18 @@ type SkillCategory = {
 export const projectsData: Project[] = [
     {
         title: "BVM",
-        description: "Virtual Machine for the Bolt Programming Language.",
+        description: "Virtual Machine for the Bolt Programming Language. Implements precise mark and sweep garbage collection.",
         links: [{ label: "Github", url: "https://github.com/HrishabhMittal/bvm" }]
     },
     {
         title: "Bolt",
-        description: "A Multi-Pass Compiler for a custom programming language with strong-static typing, which compiles to bytecode interpreted by BVM.",
+        description: "A Multi-Pass Compiler for a custom programming language with strong-static typing, support for multiple return types along with peephole optimisations and dead code elimination. Compiles to bytecode interpreted by BVM.",
         links: [{ label: "Github", url: "https://github.com/HrishabhMittal/bolt" }]
+    },
+    {
+        title: "Duchess",
+        description: "A custom chess engine written in Rust. Implements multiple search optimisations, along with a rudimentary NNUE (Efficiently Updatable Neural Network)m with weights trained on lichess' public games dataset and fine-tuned using Reinforcement Learning.",
+        links: [{ label: "Github", url: "https://github.com/HrishabhMittal/duchess" }]
     },
     {
         title: "Download Manager & Bittorrent Client",
@@ -52,22 +57,12 @@ export const projectsData: Project[] = [
         links: [{ label: "Github", url: "https://github.com/HrishabhMittal/anim" }]
     },
     {
-        title: "Soft Body Simulation",
-        description: "A Soft Body Simulation written in C++ with SDL2",
-        links: [{ label: "Github", url: "https://github.com/HrishabhMittal/SoftBodySim" }]
-    },
-    {
         title: "LZSS Compression Tool",
         description: "A cross-platform compression tool written in C (and rewritten in C++) using LZSS algorithm",
         links: [
             { label: "C", url: "https://github.com/HrishabhMittal/smoller" },
             { label: "C++", url: "https://github.com/HrishabhMittal/squash" }
         ]
-    },
-    {
-        title: "JASON",
-        description: "A simple cross-platform JSON Parser written for C++",
-        links: [{ label: "Github", url: "https://github.com/HrishabhMittal/JASON" }]
     }
 ];
 
@@ -76,18 +71,9 @@ export const skillsData: SkillCategory[] = [
         title: "Languages",
         subtitle: "Languages that have worked with.",
         items: [
-            "C++", "Golang", "C", "JavaScript/TypeScript",
+            "C++", "Golang", "Rust", "C", "JavaScript/TypeScript",
             "Bash", "Lua",
             "Python", "NASM Assembly",
         ]
     },
-    {
-        title: "Currently Exploring",
-        subtitle: "These are fields that I am actively exploring.",
-        items: [
-            "Workings of Compilers/Interpreters", "Memory Management & Garbage Collection",
-            "Network Programming", "System Design", "Competitive Programming",
-            "GameDev", "Graphics Programming"
-        ]
-    }
 ];
